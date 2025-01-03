@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Переменные для шрифтов
+$font-family-base: 'Raleway', sans-serif; 
+$font-weight-bold: bold;              
+$font-weight-medium: 500;    
+
+// Размеры шрифтов
+$font-size-base: 20px;
+$font-size-title-item: 30px; 
+$font-size-description-item: 18px; 
+$font-size-price-item: 24px;
+$font-size-button-item: 20px;

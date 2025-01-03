@@ -1,0 +1,37 @@
+// Миксин для основных стилей кнопок
+@mixin button-styles($color, $bg-color, $hover-bg, $focus-bg, $active-bg, $focus-border: none) {
+  color: $color;
+  background-color: $bg-color;
+
+  &:hover {
+    background-color: $hover-bg;
+  }
+
+  &:focus {
+    background-color: $focus-bg;
+    border: $focus-border;
+  }
+
+  &:active {
+    background-color: $active-bg;
+  }
+}
+
+// Миксин для иконок (например, корзины)
+@mixin icon-styles($fill-color, $bg-color, $hover-bg, $focus-bg, $active-fill) {
+  fill: $fill-color;
+  background-color: $bg-color;
+
+  &:hover {
+    background-color: $hover-bg;
+  }
+
+  &:focus {
+    background-color: $focus-bg;
+    fill: $active-fill;
+  }
+
+  &:active {
+    fill: $active-fill;
+  }
+}

@@ -1,0 +1,18 @@
+@function px-to-rem($px, $base: 16) {
+	@return $px / $base * 1rem;
+}
+
+body {
+	font-family: $font-family-base;
+	font-weight: $font-weight-medium;
+	font-size: $font-size-base;
+}
+
+p, h2, h3 {
+	font-size	:$font-size-title-item;
+}
+
+button {
+	width: px-to-rem(227);
+	height: px-to-rem(65);
+}

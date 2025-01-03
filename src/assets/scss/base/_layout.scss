@@ -1,0 +1,60 @@
+@function px-to-rem($px, $base: 16) {
+	@return $px / $base * 1rem;
+}
+
+.card {
+	width: px-to-rem(350);
+	height: px-to-rem(730);
+	border-color: $primary-color;
+
+	@media (max-width: 768px) {
+	width: px-to-rem(240);
+	height: px-to-rem(514);
+	}
+}
+
+.card__item {
+	width: px-to-rem(310);
+	height: px-to-rem(422);
+
+	@media (max-width: 768px) {
+	width: px-to-rem(200);
+	height: px-to-rem(250);
+	}
+}
+
+.card__item-author {
+	font-size: $font-size-description-item;
+	color: #86928b;
+}
+
+.card__item-title {
+	font-size: $font-size-title-item;
+}
+
+.card__item-description {
+	color: #2c2d35;
+	font-size: $font-size-description-item;
+}
+
+.card__item-price {
+	color: $primary-color;
+	font-size: $font-size-price-item;
+}
+
+.card__item-button-text {
+	color: $primary-color;
+	font-size: $font-size-button-item;
+}
+
+.card__item-button {
+	border: 1px solid $primary-color;
+	padding: px-to-rem(20) px-to-rem(60);
+	width: px-to-rem(310);
+	height: px-to-rem(65);
+
+	@media (max-width: 768px) {
+	width: px-to-rem(200);
+	height: px-to-rem(50);
+	}
+}
