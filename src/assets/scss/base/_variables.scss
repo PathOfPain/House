@@ -1,9 +1,9 @@
-// Основные цвета для кнопок
 $primary-color: #598D66;
 $primary-bg: #FFFFFF;
 $primary-hover-bg: #F4F6F5;
 $primary-focus-bg: #D4E8D9;
 $primary-active-bg: #376B44;
+$primary-description: #86928B;
 
 // Текстовые кнопки
 $text-color: #2C2D35;
@@ -26,4 +26,16 @@ $promo-focus-bg: #FAEB97;
 $promo-focus-border: 2px solid #A38314;
 $promo-active-bg: #D9B949;
 
+//main color
 
+$general-bg: #F4F6F5;
+$main-bg: #E1EDE6;
+$card-bg: #E1EDE6;
+$promo-title-color: #F4F6F5;
+$promo-text-color: #ffffff;
+
+//размер овальных кнопок
+
+$button-width: 126px;
+$button-height: 43px;
+$corner-radius: 20px;

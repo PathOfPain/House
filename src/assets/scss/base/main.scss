@@ -1,1 +1,5 @@
-@import 'base', 'mixins', 'reset', 'variables', 'fonts', 'layout'
+@use '@/assets/scss/base/base';
+@use '@/assets/scss/base/reset';
+@use '@/assets/scss/base/variables';
+@use '@/assets/scss/base/fonts';
+@use '@/assets/scss/base/layout';

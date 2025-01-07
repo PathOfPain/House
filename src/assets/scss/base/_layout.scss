@@ -1,50 +1,55 @@
+@use 'sass:math';
+
 @function px-to-rem($px, $base: 16) {
-	@return $px / $base * 1rem;
+	@return math.div($px, $base) * 1rem;
 }
 
 .card {
 	width: px-to-rem(350);
 	height: px-to-rem(730);
 	border-color: $primary-color;
+	background-color: $card-bg;
+	padding: 20px;
 
 	@media (max-width: 768px) {
-	width: px-to-rem(240);
-	height: px-to-rem(514);
+		width: px-to-rem(240);
+		height: px-to-rem(514);
 	}
 }
 
 .card__item {
 	width: px-to-rem(310);
-	height: px-to-rem(422);
+	height: px-to-rem(432);
 
 	@media (max-width: 768px) {
-	width: px-to-rem(200);
-	height: px-to-rem(250);
+		width: px-to-rem(200);
+		height: px-to-rem(250);
 	}
 }
 
 .card__item-author {
+		margin-top: px-to-rem(5);
 	font-size: $font-size-description-item;
 	color: #86928b;
 }
 
 .card__item-title {
+	margin-top: px-to-rem(10);
+	margin-bottom: px-to-rem(10);
 	font-size: $font-size-title-item;
+	color: #2C2D35;
 }
 
 .card__item-description {
 	color: #2c2d35;
+	margin-bottom: px-to-rem(50);
 	font-size: $font-size-description-item;
 }
 
 .card__item-price {
 	color: $primary-color;
+	margin-bottom: px-to-rem(20);
 	font-size: $font-size-price-item;
-}
-
-.card__item-button-text {
-	color: $primary-color;
-	font-size: $font-size-button-item;
 }
 
 .card__item-button {
@@ -52,9 +57,12 @@
 	padding: px-to-rem(20) px-to-rem(60);
 	width: px-to-rem(310);
 	height: px-to-rem(65);
+	color: $primary-color;
+	background-color: #fff;
+	font-size: $font-size-button-item;
 
 	@media (max-width: 768px) {
-	width: px-to-rem(200);
-	height: px-to-rem(50);
+		width: px-to-rem(200);
+		height: px-to-rem(50);
 	}
 }

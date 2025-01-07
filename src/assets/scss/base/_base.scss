@@ -1,8 +1,13 @@
+@use "sass:math";
+
 @function px-to-rem($px, $base: 16) {
-	@return $px / $base * 1rem;
+  @return math.div($px, $base) * 1rem;
 }
 
+
 body {
+	color: $text-color;
+	background-color: $general-bg;
 	font-family: $font-family-base;
 	font-weight: $font-weight-medium;
 	font-size: $font-size-base;
